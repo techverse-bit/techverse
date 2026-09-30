@@ -213,7 +213,7 @@ footer.bar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8
       <div class="brand-row">Qwen 35B + Gemma 26B · Private AI Lab — SCB GBS Bangalore</div>
       <div class="status"><span class="dot"></span> AI Lab proposal · for approval</div>
       <h1 class="headline" style="max-width:17ch">Our own AI lab, inside the bank.</h1>
-      <p class="lede">A shared AI service for 200+ employees, running two strong open models on hardware the bank owns. Up to 30–40 people can use it at the same time, no data leaves the bank, and it pays back its cost within 7–13 months.</p>
+      <p class="lede">A shared AI service for employees, running two strong open models on hardware the bank owns. Up to 30–40 people can use it at the same time, no data leaves the bank, and it pays back its cost within 7–13 months.</p>
       <a class="btn" href="#summary">Read the summary</a><a class="btn ghost" href="#budget">Budget &amp; ROI</a>
     </div>
   </div>
@@ -295,18 +295,17 @@ footer.bar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8
   <div class="wrap">
     <div class="eyebrow-row"><span class="sec-no">03</span><div class="eyebrow">Speed &amp; concurrency</div></div>
     <h2 class="title">Fast for chat and code, slower on long documents.</h2>
-    <p>Speed is measured in tokens per second (a token is roughly one word). People read at about 5–10 tokens per second, so anything above ~20 per user feels instant. Mac M5 Max figures are published test results; the other columns are estimates that the pilot will confirm.</p>
+    <p>Speed is measured in tokens per second (a token is roughly one word). People read at about 5–10 tokens per second, so anything above ~20 per user feels instant. Figures are estimates based on published tests of the same model on Apple and NVIDIA hardware; the pilot will confirm them.</p>
     <div class="tbl"><table>
-      <tr><th>Metric (Qwen3.6-35B-A3B, 4-bit)</th><th class="rec">Mac Studio M5 Max<br><small>measured</small></th><th class="rec">Mac lab: 3× M5 Ultra<br><small>estimated</small></th><th>A100 80GB<br><small>estimated</small></th></tr>
-      <tr><td>Speed, one user</td><td class="rec">~100–110 tok/s</td><td class="rec">~150–180 tok/s</td><td>~160–220 tok/s</td></tr>
-      <tr><td>Combined speed, 8 users on one machine</td><td class="rec">~246 tok/s</td><td class="rec">~400+ tok/s per Mac</td><td>—</td></tr>
-      <tr><td>Speed per user at 40 concurrent</td><td class="rec">—</td><td class="rec">~25–35 tok/s</td><td>~40–70 tok/s</td></tr>
-      <tr><td>Total lab throughput at 40 concurrent</td><td class="rec">—</td><td class="rec">~1,000–1,400 tok/s</td><td>~1,600–2,800 tok/s</td></tr>
-      <tr><td>Prompt reading speed (8k-token document)</td><td class="rec">~3,500 tok/s</td><td class="rec">~6,000–7,000 tok/s</td><td>~10,000+ tok/s</td></tr>
-      <tr><td>Wait for first word, short question</td><td class="rec">&lt; 0.5 sec</td><td class="rec">&lt; 0.5 sec</td><td>&lt; 0.3 sec</td></tr>
-      <tr><td>Wait for first word, 8k-token document</td><td class="rec">~2.3 sec</td><td class="rec">~1.2–1.5 sec</td><td>~0.5–1 sec</td></tr>
-      <tr><td>Speed at 32k-token context, one user</td><td class="rec">~87 tok/s</td><td class="rec">~130–150 tok/s</td><td>~140–180 tok/s</td></tr>
-      <tr><td>Concurrent users supported</td><td class="rec">~8 per Mac</td><td class="rec">~14–16 per Mac · 42–48 total</td><td>40+</td></tr>
+      <tr><th>Metric (Qwen3.6-35B-A3B, 4-bit)</th><th class="rec">Mac lab: 3× Mac Studio M5 Ultra <span class="tag">Recommended</span></th><th>NVIDIA A100 80GB</th></tr>
+      <tr><td>Speed, one user</td><td class="rec">~150–180 tok/s</td><td>~160–220 tok/s</td></tr>
+      <tr><td>Speed per user at 40 concurrent</td><td class="rec">~25–35 tok/s</td><td>~40–70 tok/s</td></tr>
+      <tr><td>Total lab throughput at 40 concurrent</td><td class="rec">~1,000–1,400 tok/s</td><td>~1,600–2,800 tok/s</td></tr>
+      <tr><td>Prompt reading speed (8k-token document)</td><td class="rec">~6,000–7,000 tok/s</td><td>~10,000+ tok/s</td></tr>
+      <tr><td>Wait for first word, short question</td><td class="rec">&lt; 0.5 sec</td><td>&lt; 0.3 sec</td></tr>
+      <tr><td>Wait for first word, 8k-token document</td><td class="rec">~1.2–1.5 sec</td><td>~0.5–1 sec</td></tr>
+      <tr><td>Speed at 32k-token context, one user</td><td class="rec">~130–150 tok/s</td><td>~140–180 tok/s</td></tr>
+      <tr><td>Concurrent users supported</td><td class="rec">~14–16 per Mac · 42–48 total</td><td>40+</td></tr>
     </table></div>
     <div class="stats s4">
       <div class="stat"><div class="stat-label">Mac lab · per user at 40</div><div class="stat-val">25–35 tok/s</div></div>
@@ -474,7 +473,7 @@ footer.bar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8
     </div>
 
     <h3 class="sub">Where the return comes from: productivity</h3>
-    <p>AI saves employees time on drafting, code, summaries and research. We value an hour of employee time at ₹1,600, count only half of the time saved, and assume usage grows from 40 people in month 1 to all 200 by month 6.</p>
+    <p>AI saves employees time on drafting, code, summaries and research. We value an hour of employee time at ₹1,600, count only half of the time saved, and use 200 users as a reference, with usage growing from 40 people in month 1 to all 200 by month 6.</p>
     <div class="tbl"><table>
       <tr><th>Case</th><th>Time saved per person per week</th><th>Value per year</th><th>Payback</th><th>2-year ROI</th></tr>
       <tr><td>Conservative</td><td>0.5 hour</td><td>₹37L</td><td>~13 months</td><td>1.8×</td></tr>
@@ -499,7 +498,7 @@ footer.bar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8
 </svg>
     </div>
 
-    <h3 class="sub">Why build instead of buy: cash comparison for 200 users</h3>
+    <h3 class="sub">Why build instead of buy: cash comparison (reference: 200 users)</h3>
     <p>Against enterprise AI subscriptions, the lab costs a fraction over two years and is the only option where no data leaves the bank. This is a separate question from productivity, so the two returns are not added together.</p>
     <div class="tbl"><table>
       <tr><th>Option</th><th>Per user / month</th><th>2-year cost</th><th>Lab saves</th><th>Lab breaks even</th><th>Data leaves bank?</th></tr>
