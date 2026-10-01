@@ -524,20 +524,18 @@ body:has(#archT:checked) #view-proposal{display:none}
 
 
 
-<section id="harness">
+<section id="harness" style="padding-block:40px">
   <div class="wrap">
     <div class="eyebrow-row"><span class="sec-no">07</span><div class="eyebrow">AI harness</div></div>
-    <h2 class="title">The models are one layer; the AI Lab is the harness around them.</h2>
-    <p>On its own, a model only turns text into text. The AI Lab wraps it in the layers that make it useful and safe at work.</p>
-    <div class="tbl"><table>
+    <h2 class="title" style="font-size:clamp(20px,2.6vw,24px);margin-bottom:8px">The AI Lab is the harness around the models.</h2>
+    <p style="margin-bottom:0">A model only turns text into text; these layers make it useful and safe at work.</p>
+    <div class="tbl" style="margin-top:14px"><table style="font-size:13.5px">
       <tr><th>Layer</th><th>What it does</th><th>In the AI Lab</th></tr>
       <tr><td>Interface</td><td>Chat, file uploads, booking</td><td>In-house portal (React + Node.js)</td></tr>
-      <tr><td>Memory</td><td>Chat history and context for follow-ups</td><td>Portal, files on the Mac mini</td></tr>
-      <tr><td>Bank rules</td><td>Standard bank instructions added to every request</td><td>Portal (system prompt)</td></tr>
+      <tr><td>Memory</td><td>Chat history for follow-ups</td><td>Mac mini</td></tr>
+      <tr><td>Bank rules</td><td>Standard instructions on every request</td><td>Portal (system prompt)</td></tr>
       <tr><td>Safety</td><td>Personal data, secrets, harmful content</td><td>Presidio · Gitleaks · Qwen3Guard</td></tr>
       <tr><td>Control</td><td>Model choice, access, limits, logs</td><td>RouteLLM · LiteLLM</td></tr>
-      <tr><td>Knowledge &amp; tools</td><td>Answers from approved bank documents; read-only look-ups</td><td>Added during the pilot</td></tr>
-      <tr><td>Agents</td><td>Coding agents for developers in VS Code</td><td>After the pilot, through the same gateway</td></tr>
     </table></div>
   </div>
 </section>
