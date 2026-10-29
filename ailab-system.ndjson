@@ -1,0 +1,27 @@
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"nginx","host":"mac-mini","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"gateway","host":"mac-mini","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"litellm","host":"mac-mini","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"postgresql","host":"mac-mini","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"mlx","host":"studio-a","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"mlx","host":"studio-b","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"qwen3guard","host":"studio-a","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:00:00.000Z","service":"qwen3guard","host":"studio-b","event":"service.started","outcome":"success"}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-a","event":"model.loaded","outcome":"success","model":"qwen3.6-35b-a3b","load_s":38}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-a","event":"model.loaded","outcome":"success","model":"gemma-4-26b-a4b","load_s":58}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-a","event":"model.loaded","outcome":"success","model":"qwen3guard","load_s":33}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-b","event":"model.loaded","outcome":"success","model":"qwen3.6-35b-a3b","load_s":41}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-b","event":"model.loaded","outcome":"success","model":"gemma-4-26b-a4b","load_s":33}
+{"@timestamp":"2026-10-27T03:02:00.000Z","service":"mlx","host":"studio-b","event":"model.loaded","outcome":"success","model":"qwen3guard","load_s":60}
+{"@timestamp":"2026-10-27T05:10:00.000Z","service":"qwen3guard","host":"studio-b","event":"service.unresponsive","outcome":"failure","error_type":"Timeout"}
+{"@timestamp":"2026-10-27T07:30:00.000Z","service":"mlx","host":"studio-b","event":"service.crashed","outcome":"failure","error_type":"OutOfMemory"}
+{"@timestamp":"2026-10-27T07:40:00.000Z","service":"mlx","host":"studio-b","event":"service.restarted","outcome":"success"}
+{"@timestamp":"2026-10-27T08:23:07.146Z","service":"postgresql","host":"mac-mini","event":"db.slow_query","outcome":"success","duration_ms":272,"query":"SELECT ... FROM bookings ..."}
+{"@timestamp":"2026-10-27T08:35:00.000Z","service":"postgresql","host":"mac-mini","event":"db.connection_error","outcome":"failure","error_type":"ConnectionRefused"}
+{"@timestamp":"2026-10-27T08:40:00.000Z","service":"postgresql","host":"mac-mini","event":"service.restarted","outcome":"success"}
+{"@timestamp":"2026-10-27T11:10:00.000Z","service":"litellm","host":"mac-mini","event":"node.unreachable","outcome":"failure","target":"studio-a","error_type":"ConnectError"}
+{"@timestamp":"2026-10-27T11:10:00.000Z","service":"litellm","host":"mac-mini","event":"node.unreachable","outcome":"failure","target":"studio-b","error_type":"ConnectError"}
+{"@timestamp":"2026-10-27T11:20:00.000Z","service":"mlx","host":"studio-a","event":"service.restarted","outcome":"success"}
+{"@timestamp":"2026-10-27T11:20:00.000Z","service":"mlx","host":"studio-b","event":"service.restarted","outcome":"success"}
+{"@timestamp":"2026-10-27T11:45:00.000Z","service":"gateway","host":"mac-mini","event":"service.crashed","outcome":"failure","error_type":"MemoryError"}
+{"@timestamp":"2026-10-27T11:48:00.000Z","service":"gateway","host":"mac-mini","event":"service.restarted","outcome":"success"}
+{"@timestamp":"2026-10-27T12:01:44.861Z","service":"postgresql","host":"mac-mini","event":"db.slow_query","outcome":"success","duration_ms":737,"query":"SELECT ... FROM bookings ..."}
